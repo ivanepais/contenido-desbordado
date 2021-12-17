@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contenido desbordado</title>
+</head>
+<body>
+    <h1>Capitulo 6: Contenido desbordado</h1>
+    <p>Sucede cuando hay más contenido del que la caja puede soportar.</p>
+    <h2>Desbordamiento</h2>
+    <p>Podemos expandir o restringir el tamaño de una caja con width y height o inline-size y block-size. Es bastante frecuente en las compilaciones de CSS. </p>
+    <h3>Perdida de datos</h3>
+    <p>Css trata de evitar que el contenido se pierda cuando no entre en una caja, por eso hace que se desborde.</p>
+    <h2>Propiedad overflow</h2>
+    <p>Con esta, podemos controlar como se comporta el desborde de contenido. Su valor predeterminado es "visible". Si queremos que se oculte usamos "hidden" hace que los datos se pierdan para el usuario, lo contrario a visible. El valor "scroll" agrega una barra de desplazamiento horizontal y vertical a la caja. La propiedad "overflow-y: scroll" agrega una barra de desplazamiento vertical. Los mismo con "overflow-x: scroll" agrega una barra horizontal, aunque no es recomendada para las palabras largas, es mejor investigar "word-break" y "overflow-wrap". Podemos utilizar dos valores en la propiedad overflow. El valor overflow: auto añade la barra de desplazamiento que se necesita cuando hay desborde.</p>
+    <h2>BFC (block formatting context)</h2>
+    <p>El contexto de formato en bloque se convierte en un contenedor para tu caja cuando se usa overflow. El contennido de adentro no sale y tampoco el contenido por fuera de esta caja puede superponerse.</p>
+    <h2>Consejo</h2>
+    <p>Cambiar el valor predeterminado de overflow tiene que reservarse para muy pocos casos. Se debe probar el diseño con grandes cantidades de contenido así como pequeñas cantidades, cambiar el tamaño de la letra para asegurarnos que el diseño soporte estos cambios.</p>
+</body>
+</html>
